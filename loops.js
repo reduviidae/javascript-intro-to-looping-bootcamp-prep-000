@@ -24,11 +24,7 @@ function incrementVariable() {
 
 function doWhileLoop(array) {
   do {
-    array.splice(0, 1)
-  } while (array.length > 0)
+    array.splice(0, 1);
+    incrementVariable();
+  } while (i < array.length)
 }
-
-let test = [1,2,3,4,5,6,7,8]
-
-doWhileLoop(test)
-console.log(test)
